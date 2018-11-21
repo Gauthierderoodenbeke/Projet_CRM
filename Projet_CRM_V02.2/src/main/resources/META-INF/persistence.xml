@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="PU_CRM">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>fr.inti.model.client.Client</class>
+		<class>fr.inti.model.client.Entreprise</class>
+		<class>fr.inti.model.client.Contact</class>
+		<class>fr.inti.model.commercial.HistoAffectation</class>
+		<class>fr.inti.clesPrimaires.CleHistoaffec</class>
+		<class>fr.inti.model.commercial.Commercial</class>
+		<class>fr.inti.model.commande.Commande</class>
+		<class>fr.inti.clesPrimaires.CleInteret</class>
+		<class>fr.inti.model.produit.Interet</class>
+		<class>fr.inti.model.client.Particulier</class>
+		<class>fr.inti.model.client.CoordTelephonique</class>
+		<class>fr.inti.model.client.CoordMail</class>
+		<class>fr.inti.model.client.CoordPostale</class>
+		<class>fr.inti.model.client.HoraireContact</class>
+		<class>fr.inti.model.commercial.Communication</class>
+		<class>fr.inti.clesPrimaires.CleCommande</class>
+		<class>fr.inti.clesPrimaires.CleCommunication</class>
+		<class>fr.inti.model.commande.CommandeProduit</class>
+		<class>fr.inti.model.commande.Facture</class>
+		<class>fr.inti.model.produit.HistoTarification</class>
+		<class>fr.inti.clesPrimaires.ClePropal</class>
+		<class>fr.inti.model.produit.PropalProduit</class>
+		<class>fr.inti.model.produit.FicheClientProduit</class>
+		<class>fr.inti.model.produit.FicheClient</class>
+		<class>fr.inti.clesPrimaires.CleFicheCP</class>
+		<class>fr.inti.model.produit.Produit</class>
+		<class>fr.inti.model.produit.Composition</class>
+		<class>fr.inti.clesPrimaires.CleCompo</class>
+		<class>fr.inti.model.commercial.EquipeCampagne</class>
+		<class>fr.inti.model.commercial.EquipeCom</class>
+		<class>fr.inti.model.commercial.RespCommercial</class>
+		<class>fr.inti.model.commercial.PropositionCommerciale</class>
+		<class>fr.inti.model.campagne.Campagne</class>
+		<class>fr.inti.model.campagne.CampagneOccasionnel</class>
+		<class>fr.inti.model.campagne.CampagneReg</class>
+		<class>fr.inti.model.campagne.Questionnaire</class>
+		<class>fr.inti.model.campagne.Question</class>
+		<class>fr.inti.model.campagne.Reponse</class>
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="create" />
+		</properties>
+	</persistence-unit>
+</persistence>
